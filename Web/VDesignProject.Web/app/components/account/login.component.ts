@@ -6,7 +6,6 @@ import { AuthService } from '../../services/index';
 import { UserLogin } from '../../domain/index';
 
 @Component({
-    moduleId: module.id,
     selector: 'login',
     templateUrl: 'login.component.html'
 })

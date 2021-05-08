@@ -8,19 +8,19 @@
 
     public static class QueryableMappingExtensions
     {
-        public static IQueryable<TDestination> To<TDestination>(
+       /* public static IQueryable<TDestination> To<TDestination>(
             this IQueryable source,
             params Expression<Func<TDestination, object>>[] membersToExpand)
         {
-            if (source == null)
+           *//* if (source == null)
             {
                 throw new ArgumentNullException(nameof(source));
             }
 
-            return source.ProjectTo(membersToExpand);
-        }
+            return source.ProjectTo(membersToExpand);*//*
+        }*/
 
-        public static IQueryable<TDestination> To<TDestination>(
+       /* public static IQueryable<TDestination> To<TDestination>(
             this IQueryable source,
             object parameters)
         {
@@ -30,6 +30,6 @@
             }
 
             return source.ProjectTo<TDestination>(parameters);
-        }
+        }*/
     }
 }

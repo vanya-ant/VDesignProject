@@ -6,7 +6,6 @@ import { TodoItemsDataService, RouterService } from '../../../services/index';
 import { TodoItem } from '../../../domain/index';
 
 @Component({
-    moduleId: module.id,
     selector: 'todo-item-create',
     templateUrl: 'todo-item-create.component.html'
 })

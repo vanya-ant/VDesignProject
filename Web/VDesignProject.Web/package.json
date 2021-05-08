@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "aspnetcorewithangulartemplate",
+  "name": "vdesignproject",
   "private": true,
   "dependencies": {
     "@angular/animations": "~5.1.1",
@@ -13,6 +13,7 @@
     "@angular/router": "~5.1.1",
     "bootstrap": "3.4.1",
     "core-js": "2.5.3",
+    "gulp": "^3.9.1",
     "jquery": "3.4.1",
     "reflect-metadata": "0.1.10",
     "rxjs": "5.5.5",
@@ -22,10 +23,9 @@
   },
   "devDependencies": {
     "@types/core-js": "0.9.43",
-    "@types/node": "8.5.1",
+    "@types/node": "^8.5.1",
     "del": "3.0.0",
     "delete-empty": "1.0.1",
-    "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "2.6.1",
     "gulp-html-minifier": "0.1.8",
@@ -43,5 +43,11 @@
     "systemjs-builder": "0.16.12",
     "tsconfig-glob": "0.4.3",
     "typescript": "2.6.1"
+  },
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   }
 }

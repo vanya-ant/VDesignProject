@@ -13,14 +13,14 @@
         {
             var types = assemblies.SelectMany(a => a.GetExportedTypes()).ToList();
 
-            Mapper.Initialize(configuration =>
+      /*      Mapper.Initialize(configuration =>
             {
                 RegisterStandardFromMappings(configuration, types);
 
                 RegisterStandardToMappings(configuration, types);
 
                 RegisterCustomMaps(configuration, types);
-            });
+            });*/
         }
 
         private static void RegisterStandardFromMappings(IProfileExpression configuration, IEnumerable<Type> types)

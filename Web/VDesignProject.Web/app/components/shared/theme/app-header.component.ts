@@ -5,7 +5,6 @@ import { AuthService, IdentityService } from '../../../services/index';
 import { BaseSubscriptionsComponent } from '../../base/base-subscriptions.component';
 
 @Component({
-    moduleId: module.id,
     selector: 'app-header',
     templateUrl: 'app-header.component.html'
 })
