@@ -24,7 +24,7 @@
 
         public virtual IQueryable<TEntity> AllAsNoTracking() => this.DbSet.AsNoTracking();
 
-        public virtual Task<TEntity> GetByIdAsync(params object[] id) => this.DbSet.FindAsync(id);
+        public virtual Task<TEntity> GetByIdAsync(params object[] id) => this.DbSet.FindAsync(id).AsTask();
 
         public virtual void Add(TEntity entity)
         {

@@ -19,7 +19,7 @@
 
             app.UseMiddleware<TokenProviderMiddleware>(options, principalResolver);
 
-            app.UseAuthentication();
+            /*app.UseAuthentication();*/
         }
 
         private static void ValidateArgs(

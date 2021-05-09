@@ -11,8 +11,10 @@
 
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Options;
+    using Microsoft.IdentityModel.JsonWebTokens;
     using Newtonsoft.Json;
     using VDesignProject.Common;
+    using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
 
     public class TokenProviderMiddleware
     {
